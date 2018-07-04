@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nttr.arraysample.MainActivity">
+
+    <ImageButton
+        android:id="@+id/gu"
+        android:layout_width="84dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/gu"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/choki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/gu" />
+
+    <ImageButton
+        android:id="@+id/choki"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="105dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="142dp"
+        android:contentDescription="@string/choki"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/goukei"
+        app:layout_constraintEnd_toStartOf="@+id/pa"
+        app:layout_constraintStart_toEndOf="@+id/gu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/choki" />
+
+    <ImageButton
+        android:id="@+id/pa"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="19dp"
+        android:contentDescription="@string/pa"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choki"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/pa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="189dp"
+        android:layout_marginEnd="13dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/choki"
+        app:layout_constraintTop_toBottomOf="@+id/choki" />
+
+    <TextView
+        android:id="@+id/goukei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/choki" />
+
+</android.support.constraint.ConstraintLayout>
